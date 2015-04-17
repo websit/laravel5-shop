@@ -29,7 +29,7 @@
   "autoload-dev": {
     "classmap": [
       "tests/TestCase.php",
-      "app/Model"
+      "app/Models"
     ]
   },
   "scripts": {
