@@ -1,5 +1,4 @@
-@extends('app')
-
+@extends('home.layout.app')
 {{-- Web site Title --}}
 @section('title') {{{ Lang::get('site/user.login') }}} :: @parent @stop
 

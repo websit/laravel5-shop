@@ -15,17 +15,17 @@
               content="Lorem ipsum dolor sit amet, nihil fabulas et sea, nam posse menandri scripserit no, mei."/>
     @show
 
-		<link href="{{ asset('/css/all.css') }}" rel="stylesheet">
     {{--<link href="{{elixir('css/all.css')}}" rel="stylesheet">--}}
 
     {{-- TODO: Incorporate into elixer workflow. --}}
     <link rel="stylesheet"
-          href="{{asset('assets/site/css/half-slider.css')}}">    
+          href="{{asset('assets/site/css/half-slider.css')}}">
+    <link rel="stylesheet"
+          href="{{asset('assets/site/css/home-top.css')}}">      
     <link rel="stylesheet"
           href="{{asset('assets/site/css/justifiedGallery.min.css')}}"/>
     <link rel="stylesheet"
           href="{{asset('assets/site/css/lightbox.min.css')}}"/>
-    <link rel="stylesheet" href="{{asset('assets/site/css/bootstrap-theme.min.css')}}">
 
     @yield('styles')
 
@@ -42,7 +42,7 @@
     <link rel="shortcut icon" href="{{{ asset('assets/site/ico/favicon.ico') }}}">
 </head>
 <body>
-@include('partials.nav')
+@include('home.partials.nav')
 
 @include('flash::message')
 <div class="container">
