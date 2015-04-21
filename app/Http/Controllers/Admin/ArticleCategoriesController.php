@@ -19,7 +19,7 @@ class ArticleCategoriesController extends AdminController {
 	public function index()
 	{
         // Show the page
-        return view('admin.newscategory.index');
+        return view('backend.newscategory.index');
 	}
 
     /**
@@ -32,7 +32,7 @@ class ArticleCategoriesController extends AdminController {
         $languages = Language::all();
         $language = "";
         // Show the page
-        return view('admin.newscategory.create_edit', compact('languages','language'));
+        return view('backend.newscategory.create_edit', compact('languages','language'));
     }
 
     /**
@@ -60,7 +60,7 @@ class ArticleCategoriesController extends AdminController {
         $language = $newscategory->language_id;
         $languages = Language::all();
 
-        return view('admin.newscategory.create_edit',compact('newscategory','languages','language'));
+        return view('backend.newscategory.create_edit',compact('newscategory','languages','language'));
     }
 
     /**
@@ -89,7 +89,7 @@ class ArticleCategoriesController extends AdminController {
     {
         $newscategory = ArticleCategory::find($id);
         // Show the page
-        return view('admin.newscategory.delete', compact('newscategory'));
+        return view('backend.newscategory.delete', compact('newscategory'));
     }
 
     /**

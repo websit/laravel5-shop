@@ -18,7 +18,7 @@ class LanguageController extends AdminController {
 	public function index()
 	{
         // Show the page
-        return view('admin.language.index');
+        return view('backend.language.index');
 	}
 
 	/**
@@ -29,7 +29,7 @@ class LanguageController extends AdminController {
 	public function getCreate()
 	{
        // Show the page
-        return view('admin/language/create_edit');
+        return view('backend/language/create_edit');
 	}
 
 	/**
@@ -71,7 +71,7 @@ class LanguageController extends AdminController {
 	{
         $language = Language::find($id);
 
-        return view('admin/language/create_edit',compact('language'));
+        return view('backend/language/create_edit',compact('language'));
 	}
 
 	/**
@@ -116,7 +116,7 @@ class LanguageController extends AdminController {
     {
         $language = $id;
         // Show the page
-        return view('admin/language/delete', compact('language'));
+        return view('backend/language/delete', compact('language'));
     }
 
     /**

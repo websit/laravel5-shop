@@ -21,7 +21,7 @@ class PhotoController extends AdminController {
  */
     public function index() {
         // Show the page
-        return view('admin.photo.index');
+        return view('backend.photo.index');
     }
 
     /**
@@ -32,7 +32,7 @@ class PhotoController extends AdminController {
     public function itemsForAlbum($id) {
         $album = PhotoAlbum::find($id);
         // Show the page
-        return view('admin.photo.index', compact('album'));
+        return view('backend.photo.index', compact('album'));
     }
 
     /**
@@ -47,7 +47,7 @@ class PhotoController extends AdminController {
         $photoalbums = PhotoAlbum::all();
         $photoalbum = "";
         // Show the page
-        return view('admin.photo.create_edit', compact('languages', 'language','photoalbums','photoalbum'));
+        return view('backend.photo.create_edit', compact('languages', 'language','photoalbums','photoalbum'));
     }
 
     /**
@@ -101,7 +101,7 @@ class PhotoController extends AdminController {
         $photoalbums = PhotoAlbum::all();
         $photoalbum = $photo->photo_album_id;
 
-        return view('admin.photo.create_edit',compact('photo','languages','language','photoalbums','photoalbum'));
+        return view('backend.photo.create_edit',compact('photo','languages','language','photoalbums','photoalbum'));
     }
 
     /**
@@ -154,7 +154,7 @@ class PhotoController extends AdminController {
     {
         $photo = Photo::find($id);
         // Show the page
-        return view('admin.photo.delete', compact('photo'));
+        return view('backend.photo.delete', compact('photo'));
     }
 
     /**

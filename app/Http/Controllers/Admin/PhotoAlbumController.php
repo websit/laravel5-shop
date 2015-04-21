@@ -20,7 +20,7 @@ class PhotoAlbumController extends AdminController {
     public function index()
     {
         // Show the page
-        return view('admin.photoalbum.index');
+        return view('backend.photoalbum.index');
     }
     /**
      * Show the form for creating a new resource.
@@ -32,7 +32,7 @@ class PhotoAlbumController extends AdminController {
         $languages = Language::all();
         $language = "";
         // Show the page
-        return view('admin.photoalbum.create_edit', compact('languages','language'));
+        return view('backend.photoalbum.create_edit', compact('languages','language'));
     }
 
     /**
@@ -62,7 +62,7 @@ class PhotoAlbumController extends AdminController {
         $language = $photoalbum->language_id;
         $languages = Language::all();
 
-        return view('admin.photoalbum.create_edit',compact('photoalbum','languages','language'));
+        return view('backend.photoalbum.create_edit',compact('photoalbum','languages','language'));
     }
 
     /**
@@ -92,7 +92,7 @@ class PhotoAlbumController extends AdminController {
     {
         $photoalbum = PhotoAlbum::find($id);
         // Show the page
-        return view('admin.photoalbum.delete', compact('photoalbum'));
+        return view('backend.photoalbum.delete', compact('photoalbum'));
     }
 
     /**

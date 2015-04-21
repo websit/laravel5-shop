@@ -17,7 +17,7 @@ class RoleController extends AdminController {
     public function index()
     {
         // Show the page
-        return view('admin.roles.index');
+        return view('backend.roles.index');
     }
     /**
      * Show the form for creating a new resource.
@@ -32,7 +32,7 @@ class RoleController extends AdminController {
         $permisionsadd =array();
 
         // Show the page
-        return view('admin.roles.create_edit', compact('permissionsAdmin', 'permissionsUser','permisionsadd'));
+        return view('backend.roles.create_edit', compact('permissionsAdmin', 'permissionsUser','permisionsadd'));
     }
     /**
      * Store a newly created resource in storage.
@@ -81,7 +81,7 @@ class RoleController extends AdminController {
         $permisionsadd = PermissionRole::where('role_id','=',$id)->select('permission_id')->get();
 
         // Show the page
-        return view('admin.roles.create_edit', compact('role', 'permissionsAdmin', 'permissionsUser','permisionsadd'));
+        return view('backend.roles.create_edit', compact('role', 'permissionsAdmin', 'permissionsUser','permisionsadd'));
     }
 
     /**
@@ -131,7 +131,7 @@ class RoleController extends AdminController {
     {
         $role = Role::find($id);
         // Show the page
-        return view('admin.roles.delete', compact('role'));
+        return view('backend.roles.delete', compact('role'));
     }
 
     /**

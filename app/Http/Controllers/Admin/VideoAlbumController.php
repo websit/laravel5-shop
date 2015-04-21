@@ -20,7 +20,7 @@ class VideoAlbumController extends AdminController {
     public function index()
     {
         // Show the page
-        return view('admin.videoalbum.index');
+        return view('backend.videoalbum.index');
     }
     /**
      * Show the form for creating a new resource.
@@ -32,7 +32,7 @@ class VideoAlbumController extends AdminController {
         $languages = Language::all();
         $language = "";
         // Show the page
-        return view('admin.videoalbum.create_edit', compact('languages','language'));
+        return view('backend.videoalbum.create_edit', compact('languages','language'));
     }
 
     /**
@@ -62,7 +62,7 @@ class VideoAlbumController extends AdminController {
         $language = $videoalbum->language_id;
         $languages = Language::all();
 
-        return view('admin.videoalbum.create_edit',compact('videoalbum','languages','language'));
+        return view('backend.videoalbum.create_edit',compact('videoalbum','languages','language'));
     }
 
     /**
@@ -92,7 +92,7 @@ class VideoAlbumController extends AdminController {
     {
         $videoalbum = VideoAlbum::find($id);
         // Show the page
-        return view('admin.videoalbum.delete', compact('videoalbum'));
+        return view('backend.videoalbum.delete', compact('videoalbum'));
     }
 
     /**

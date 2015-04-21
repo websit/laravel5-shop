@@ -22,7 +22,7 @@ class VideoController extends AdminController {
     public function index()
     {
         // Show the page
-        return view('admin.video.index');
+        return view('backend.video.index');
     }
 
     /**
@@ -34,7 +34,7 @@ class VideoController extends AdminController {
 
         $album = VideoAlbum::find($id);
         // Show the page
-        return view('admin.video.index', compact('album'));
+        return view('backend.video.index', compact('album'));
     }
 
     /**
@@ -49,7 +49,7 @@ class VideoController extends AdminController {
         $videoalbums = VideoAlbum::all();
         $videoalbum = "";
         // Show the page
-        return view('admin.video.create_edit', compact('languages', 'language','videoalbums','videoalbum'));
+        return view('backend.video.create_edit', compact('languages', 'language','videoalbums','videoalbum'));
     }
 
     /**
@@ -107,7 +107,7 @@ class VideoController extends AdminController {
         $videoalbums = VideoAlbum::all();
         $videoalbum = $video->video_album_id;
 
-        return view('admin.video.create_edit',compact('video','languages','language','videoalbums','videoalbum'));
+        return view('backend.video.create_edit',compact('video','languages','language','videoalbums','videoalbum'));
     }
 
     /**
@@ -161,7 +161,7 @@ class VideoController extends AdminController {
     {
         $video = Video::find($id);
         // Show the page
-        return view('admin.video.delete', compact('video'));
+        return view('backend.video.delete', compact('video'));
     }
 
     /**

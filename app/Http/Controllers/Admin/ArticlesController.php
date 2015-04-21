@@ -21,7 +21,7 @@ class ArticlesController extends AdminController {
     public function index()
     {
         // Show the page
-        return view('admin.news.index');
+        return view('backend.news.index');
     }
 
     /**
@@ -36,7 +36,7 @@ class ArticlesController extends AdminController {
 		$newscategories = ArticleCategory::all();
 		$newscategory = "";
         // Show the page
-        return view('admin.news.create_edit', compact('languages', 'language','newscategories','newscategory'));
+        return view('backend.news.create_edit', compact('languages', 'language','newscategories','newscategory'));
     }
 
     /**
@@ -86,7 +86,7 @@ class ArticlesController extends AdminController {
 		$newscategories = ArticleCategory::all();
 		$newscategory = $news->newscategory_id;
 
-        return view('admin.news.create_edit',compact('news','languages','language','newscategories','newscategory'));
+        return view('backend.news.create_edit',compact('news','languages','language','newscategories','newscategory'));
     }
 
     /**
@@ -135,7 +135,7 @@ class ArticlesController extends AdminController {
     {
         $news = Article::find($id);
         // Show the page
-        return view('admin.news.delete', compact('news'));
+        return view('backend.news.delete', compact('news'));
     }
 
     /**

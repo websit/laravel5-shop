@@ -20,7 +20,7 @@ class UserController extends AdminController {
     public function index()
     {
         // Show the page
-        return view('admin.users.index');
+        return view('backend.users.index');
     }
 
     /**
@@ -32,7 +32,7 @@ class UserController extends AdminController {
         $roles = Role::all();
         // Selected groups
         $selectedRoles = array();
-        return view('admin.users.create_edit', compact('roles', 'selectedRoles'));
+        return view('backend.users.create_edit', compact('roles', 'selectedRoles'));
     }
 
     /**
@@ -71,7 +71,7 @@ class UserController extends AdminController {
         $roles = Role::all();
         $selectedRoles = AssignedRoles::where('user_id','=',$user->id)->lists('role_id');
 
-        return view('admin.users.create_edit', compact('user', 'roles', 'selectedRoles'));
+        return view('backend.users.create_edit', compact('user', 'roles', 'selectedRoles'));
     }
 
     /**
@@ -115,7 +115,7 @@ class UserController extends AdminController {
     {
         $user = User::find($id);
         // Show the page
-        return view('admin.users.delete', compact('user'));
+        return view('backend.users.delete', compact('user'));
     }
 
     /**
