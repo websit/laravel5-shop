@@ -1,3 +1,11 @@
-.menu-light  a:hover{
-	background:red;
+@media(max-width:768px){
+	#hover-top-li  a:hover{
+	background:#fff;
+	color: #000;
+}
+}
+#fooder{
+	background-color: #ccc;
+	display: block;
+	clear: both;
 }

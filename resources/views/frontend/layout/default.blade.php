@@ -13,11 +13,11 @@
    		@show
 		<title>@section('title') AICY QQK @show</title>
 		<link href="{{ asset('assets/site/css/bootstrap.min.css')}}" rel="stylesheet">
+		<link href="{{ asset('assets/site/css/home-top.css') }}" rel="stylesheet">
 		@yield('styles')
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="{{{ asset('assets/site/ico/favicon.ico') }}}">
-		<link rel="stylesheet" href="{{{ asset('assets/site/css/home-top.css') }}}">
+		<link rel="shortcut icon" href="{{ asset('assets/site/ico/favicon.ico') }}">
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -37,7 +37,7 @@
 					<a class="navbar-brand">欢迎来到Aicy测试站</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right menu-light">
+				<ul class="nav navbar-nav navbar-right" id="hover-top-li">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Home2</a></li>
 					<li><a href="#">Home3</a></li>
@@ -47,7 +47,6 @@
 							<li><a href="#">action</a></li>
 							<li><a href="#">action1</a></li>
 							<li><a href="#">action2</a></li>
-							<li class="divider"></li>
 						</ul>
 					</li>
 				</ul>
@@ -61,7 +60,11 @@
 		</section>
 		<footer id="fooder">
 			<div class="container">
-
+				<div class="row">
+				  <div class="col-xs-4">.col-md-4</div>
+  				  <div class="col-xs-4">.col-md-4</div>
+  				  <div class="col-xs-4">.col-md-4</div>
+				</div>
 			</div>
 		</footer>
 		<!--script  start-->
