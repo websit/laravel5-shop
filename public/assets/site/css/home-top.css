@@ -4,8 +4,56 @@
 	color: #000;
 }
 }
+li{
+	list-style: none;
+}
+.head ul{
+	margin-right: 38px;
+}
+.navbar{
+	margin-bottom: 5px;
+	/*position:fixed;*/
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	/*z-index: 1;*/
+}
+.head-top .head{
+	text-align: center;
+	line-height: 30px;
+	background: #EAEAEA;
+}
+.head a{
+	display:block;
+	color: 	#EE9A00;
+}
+.head a:hover{
+	background: #999;
+	color: #fff;
+}
+#generic{
+
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.product{
+	border: 1px solid #666;
+	margin: 5px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+.product-head{
+	padding: 10px;
+}
 #fooder{
 	background-color: #ccc;
-	display: block;
-	clear: both;
+	/*position:fixed;*/
+	height: 50px;
+	width: 100%;
+	left: 0;
+	margin-bottom: 0px;
+	line-height: 50px;
+
+
 }

@@ -25,7 +25,7 @@
     <![endif]-->
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-inverse">
+		<nav class="navbar navbar-default navbar-inverse" style="border-radius:0;">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -52,8 +52,27 @@
 				</ul>
 				</div>	
 			</div>
-		</nav>			
+		</nav>
+		<header>
+			<div class="container head-top">
+				<div class="row head">
+					<ul>
+						<li class="col-sm-2" {{ (Request::is('/') ? ' class="active"' : '') }}><a href="#">首页首页</a></li>
+						<li class="col-sm-2"><a href="#">首页</a></li>
+						<li class="col-sm-2"><a href="#">首页首页</a></li>
+						<li class="col-sm-2"><a href="#">首页</a></li>
+						<li class="col-sm-2"><a href="#">首页首页</a></li>
+						<li class="col-sm-2"><a href="#">首页首页</a></li>	
+					</ul>							
+				</div>
+			</div>
+		</header>			
 		<section>
+			<article>
+				<div class="container-fulid">
+				@yield('top-pic')
+			</div>
+			</article>
 			<div class="container">
 				@yield('content')
 			</div>
