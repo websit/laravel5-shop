@@ -18,6 +18,10 @@
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="{{ asset('assets/site/ico/favicon.ico') }}">
+		<!-- // <script src="{{ asset('assets/site/js/jquery.min.js')}}"></script> -->
+		<!-- // <script src="{{ asset('assets/site/js/bootstrap.min.js')}}"></script> -->
+		<!-- // <script src="{{ asset('assets/site/js/jquery.validate.js')}}"></script> -->
+		<script src="{{ asset('assets/site/js/sea.js')}}"></script>
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -52,42 +56,22 @@
 				</ul>
 				</div>	
 			</div>
-		</nav>
-		<header>
-			<div class="container head-top">
-				<div class="row head">
-					<ul>
-						<li class="col-sm-2" {{ (Request::is('/') ? ' class="active"' : '') }}><a href="#">首页首页</a></li>
-						<li class="col-sm-2"><a href="#">首页</a></li>
-						<li class="col-sm-2"><a href="#">首页首页</a></li>
-						<li class="col-sm-2"><a href="#">首页</a></li>
-						<li class="col-sm-2"><a href="#">首页首页</a></li>
-						<li class="col-sm-2"><a href="#">首页首页</a></li>	
-					</ul>							
-				</div>
-			</div>
-		</header>			
+		</nav>		
 		<section>
-			<article>
-				<div class="container-fulid">
-				@yield('top-pic')
-			</div>
-			</article>
 			<div class="container">
 				@yield('content')
 			</div>
 		</section>
-		<footer id="fooder">
-			<div class="container">
+		<!-- <footer id="fooder"> -->
+			<!-- <div class="container">
 				<div class="row">
 				  <div class="col-xs-4">.col-md-4</div>
   				  <div class="col-xs-4">.col-md-4</div>
   				  <div class="col-xs-4">.col-md-4</div>
 				</div>
-			</div>
-		</footer>
+			</div> -->
+		<!-- </footer> -->
 		<!--script  start-->
-		<script src="{{ asset('assets/site/js/jquery.min.js')}}"></script>
-		<script src="{{ asset('assets/site/js/bootstrap.min.js')}}"></script>
+		@yield('script')
 	</body>
 </html>
