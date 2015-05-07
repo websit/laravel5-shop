@@ -1,6 +1,14 @@
 @extends('frontend.layout.default')
 @section('title') Home @stop
+@section('css')
+<style>
+	label{
+		margin-top: 5px;
+}
+</style>
+@stop
 @section('content')
+
 	<form class="form-horizontal" id="myform">
 		<div class="form-group">
 			<label for="Names" class="col-sm-1 control-label">Name</label>
@@ -31,27 +39,11 @@
 	</form>	
 @endsection
 @section('script')
-
 <script>
 	seajs.config({
-        base: "{{asset('assets/site/sea_js')}}"
+        base: "/assets/site/"
     });
-    seajs.use('login');
-	// $().ready(function(){
-	// 	$('#myform').validate({
-	// 		debug:true,
-	// 		rules:{
-	// 			Names:{
-	// 				required:true,
-	// 				minlength:3
-	// 			},
-	// 			emails:{
-	// 				required:true,
-	// 				minlength:3
-	// 			},
-	// 		},
-	// 	});
-	// })
+    seajs.use("src_js/login");
 </script>
 @stop
 

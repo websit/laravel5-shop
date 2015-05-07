@@ -18,10 +18,8 @@
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="{{ asset('assets/site/ico/favicon.ico') }}">
-		<!-- // <script src="{{ asset('assets/site/js/jquery.min.js')}}"></script> -->
-		<!-- // <script src="{{ asset('assets/site/js/bootstrap.min.js')}}"></script> -->
-		<!-- // <script src="{{ asset('assets/site/js/jquery.validate.js')}}"></script> -->
 		<script src="{{ asset('assets/site/js/sea.js')}}"></script>
+		@yield('css')
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
