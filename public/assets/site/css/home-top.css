@@ -4,14 +4,8 @@
 	color: #000;
 }
 }
-li{
-	list-style: none;
-}
-.head ul{
-	margin-right: 38px;
-}
 .navbar{
-	margin-bottom: 5px;
+	margin-bottom: 95px;
 	/*position:fixed;*/
 	position: relative;
 	width: 100%;
@@ -19,33 +13,217 @@ li{
 	left: 0;
 	/*z-index: 1;*/
 }
-.head-top .head{
-	text-align: center;
-	line-height: 30px;
-	background: #EAEAEA;
-}
-.head a{
-	display:block;
-	color: 	#EE9A00;
-}
-.head a:hover{
+.head>a:hover{
 	background: #999;
 	color: #fff;
 }
-#generic{
-
-	margin-top: 10px;
-	margin-bottom: 50px;
+/*/css3   Aicy/*/
+/*html{
+	width: 100%;
+	height: 100%;
+	-ms-text-size-adjust:none;
+	-webkit-text-size-adjust:none;
+	-moz-text-size-adjust:none;
+	-o-text-size-adjust:none;
+}*/
+/*body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background: #47c9af;
+	font-weight: 500;
+	font-size: 1em;
+	font-family: 'Raleway',Arial,sans-serif;
+}*/
+/*ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
 }
-.product{
-	border: 1px solid #666;
-	margin: 5px;
-	padding-bottom: 10px;
-	padding-left: 20px;
+a:link,a:visited{
+	text-decoration: none;
+	outline: none;
 }
-.product-head{
+*,*:after,*:before{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.clearfix:before,.clearfix:after{
+	content: '';
+	display: block;
+}
+.clearfix:after{
+	clear: both;
+}*/
+/*.nav_list{
+width: 800px;
+height: 300px;
+margin: 200px auto 0 auto;
+font-weight: 300px;
+}
+.nav_list ul li{
+	display: inline-block;
+	position: relative;
+	margin: 0 1em;
+	font-size: 1.5em;
+}
+.nav_list ul li a{
+	display: inline-block;
+	font-weight: 700;
+	padding: 0.15em 0.5em 0;
+	-webkit-transition:color 0.8s;
+	-moz-transition:color 0.8s;
+	-o-transition:color 0.8s;
+	transition:color 0.8s;
+}
+.nav_list a{
+	color:rgba(0,0,0,0.8);
+}
+.nav_list a:hover,.nav_list a:focus{
+	color: #fff;
+}
+.toolist{
+	display: inline;
+	position: relative;
+	z-index: 999;
+}
+.toolist-content{
+	position: absolute;
+	z-index: 9999;
+	background: #fff;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	left: 50%;
+	bottom: 100%;
+	margin-left: -30px;
+	padding-top: 20px;
+	margin-bottom: 15px;
+	pointer-events:none;
+	cursor:default;
+	opacity: 0;
+	text-align: center;
+	color: #47c9af;
+}
+.toolist-content i{
+	opacity: 0;
+}
+.toolist:hover .toolist-content,
+.toolist:hover .toolist-content i{
+	opacity: 1;
+	pointer-events:auto;
+	-webkit-transform:translate3d(0,0,0) scale3d(1,1,1);
+	transform:translate3d(0,0,0) scale3d(1,1,1);
+}
+.effect-1 .toolist-content {
+	-webkit-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	-o-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	-moz-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	-ms-transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	-webkit-transform-origin:50% 100%;
+	-o-transform-origin:50% 100%;
+	-moz-transform-origin:50% 100%;
+	transform-origin:50% 100%;
+	-webkit-transition:opacity 0.5s,-webkit-transform 0.7s;
+	-o-transition:opacity 0.5s,-o-transform 0.7s;
+	-moz-transition:opacity 0.5s,-moz-transform 0.7s;
+	transition:opacity 0.3s,transform 0.7s;
+}
+.effect-1 .toolist-content i{
+	-webkit-transform:scale3d(0,0,1);
+	-moz-transform:scale3d(0,0,1);
+	-o-transform:scale3d(0,0,1);
+	-ms-transform:scale3d(0,0,1);
+	transform:scale3d(0,0,1);
+	transition:opacity 0.5s,transform 0.7s;
+	-webkit-transition:opacity 0.5s,transform 0.7s;
+	-o-transition:opacity 0.5s,transform 0.7s;
+	-ms-transition:opacity 0.5s,transform 0.7s;
+	-moz-transition:opacity 0.5s,transform 0.7s;
+}
+.effect-2 .toolist-content{
+	transform:translate3d(0,15px,0);
+	-moz-transform:translate3d(0,15px,0);
+	-ms-transform:translate3d(0,15px,0);
+	-webkit-transform:translate3d(0,15px,0);
+	-o-transform:translate3d(0,15px,0);
+	transition:opacity 0.5s,transform 0.7s;
+	-o-transition:opacity 0.5s,transform 0.7s;
+	-moz-transition:opacity 0.5s,transform 0.7s;
+	-ms-transition:opacity 0.5s,transform 0.7s;
+	-webkit-transition:opacity 0.5s,transform 0.7s;
+}
+.effect-2 .toolist-content i{
+	transform:translate3d(0,10px,0);
+	-webkit-transform:translate3d(0,10px,0);
+	-o-transform:translate3d(0,10px,0);
+	-ms-transform:translate3d(0,10px,0);
+	-moz-transform:translate3d(0,10px,0);
+	transition:opacity 0.5s,transform 0.7s;
+	-webkit-transition:opacity 0.5s,transform 0.7s;
+	-o-transition:opacity 0.5s,transform 0.7s;
+	-ms-transition:opacity 0.5s,transform 0.7s;
+	-moz-transition:opacity 0.5s,transform 0.7s;
+}
+.effect-3 .toolist-content{
+	transform:translate3d(0,10px,0) rotate3d(0,1,0,90deg); 
+	transform-origin:50% 100%;
+	transition:opacity 0.5s,transform 0.7s;
+}
+.effect-3 .toolist-content i{
+	transform:scale3d(0,0,1);
+	transition:opacity 0.5s,transform 0.7s;
+}
+.effect-4 .toolist-content{
+	transform:translate3d(0,-15px,0);
+	transition:opacity 0.5s,transform 0.7s;
+}
+.effect-4 .toolist-content i{
+	transform:translate3d(0,15px,0);
+	transition:opacity 0.5s,transform 0.7s;
+}
+.effect-5 .toolist-content,.effect-5 .toolist-content i{
+	transform:scale3d(0,0,1);
+	transform-origin:50% 100%;
+	transition:opacity 0.4s,transform 0.5s;
+}
+.toolist-content::after{
+	content: '';
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	background-size: 100%;
+	margin:-7px 0 0 -15px;
+	background:  url(/assets/site/images/tooltip1.svg) no-repeat center center;
+}*/
+*{
+	padding: 0;
+	margin: 0;
+}
+#main{
+	position: relative;
+}
+.pin{
+	padding: 10px 0 0 10px;
+	float: left;
+}
+.box{
 	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 6px #ccc; 
 }
+.box img{
+	width: 162px;
+	height: auto;
+}
+/*/css3  end/*/
 #fooder{
 	background-color: #ccc;
 	/*position:fixed;*/
@@ -54,6 +232,4 @@ li{
 	left: 0;
 	margin-bottom: 0px;
 	line-height: 50px;
-
-
 }
