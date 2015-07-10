@@ -27,7 +27,7 @@ if (Request::is('admin/*'))
 Route::group(['namespace'=>'Home'],function(){
 	Route::resource('/','HomeController@index');
 });
- Route::group(['namespace'=>'Home/about'],function(){
-     echo 1111;
- });
+// Route::group(['namespace'=>'Home/about'],function(){
+//     echo 1111;
+// });
 		 

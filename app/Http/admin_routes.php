@@ -1,4 +1,5 @@
 <?php
+//后台路由组
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::pattern('id', '[0-9]+');
     Route::pattern('id2', '[0-9]+');
