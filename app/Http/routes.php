@@ -29,5 +29,5 @@ Route::group(['namespace'=>'Home'],function(){
 });
  Route::group(['namespace'=>'Home/about'],function(){
      echo 1111;
- })
+ });
 		 
